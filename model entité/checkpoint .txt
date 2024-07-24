@@ -1,0 +1,41 @@
+Gymnase
+---------
+- Nom (PK)
+- Adresse
+- Numéro de téléphone
+
+Membre
+---------
+- Identifiant unique (PK)
+- Nom
+- Prénom
+- Adresse
+- Date de naissance
+- Sexe
+- Gymnase_nom (FK)
+
+Session
+---------
+- ID Session (PK)
+- Type de sport
+- Horaire
+- Maximum de 20 membres
+- Gymnase_nom (FK)
+
+Entraîneur
+---------
+- ID Entraîneur (PK)
+- Nom
+- Prénom
+- Âge
+- Spécialité
+
+Session-Membre
+---------
+- ID Session (PK, FK)
+- Identifiant unique membre (PK, FK)
+
+Session-Entraîneur
+---------
+- ID Session (PK, FK)
+- ID Entraîneur (PK, FK)
